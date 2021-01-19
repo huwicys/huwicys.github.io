@@ -96,51 +96,92 @@
         <div class="container">
                 <div class="row">
                   <div class="col-lg-11 text-center mx-auto col-12">
-                                                
-
                       <div class ="col-lg-8 mx-auto">
                         <h2>Past Events</h2>
                        
+                        <button class="accordion">2021 Guest Speakers</button>
+                        <div class="panel">
+                          <div class="row">
+                            <div class="column">
+                              <figure>
+                                <img src = "images/events/stefana_muller_spring2021.png" class="img-fluid" alt="Dominic Spinosa" width ="250" height="250">
+                                <figcaption>Stefana Muller
+                                  <br>DevOps Expert, 
+                                  <br>Project Management Leader,
+                                  <br>and Founder of LI Women in Tech
+                                  <br>02/10/2021</figcaption>
+                              </figure>  
+                            </div>
+                          </div>
+                        </div>
 
+                        <button class="accordion">2020 Guest Speakers</button>
+                        <div class="panel">
+                          <div class="row">
+                            <div class="column">
+                              <figure>
+                                <img src = "images/events/spinosa.png" class="img-fluid" alt="Dominic Spinosa" width ="250" height="250">
+                                <figcaption>Dominic Spinosa
+                                  <br>Offensive Security Engineer on Facebook's Red Team
+                                  <br>2/19/2020</figcaption>
+                              </figure>  
+                            </div> 
+                            <div class="column">   
+                              <figure>
+                                <img src = "images/events/brdata.png" class = "img-fluid" alt="BRData Alumni Panel" width = "250" height = "250">
+                                <figcaption>Anthony, Amy, and Cheryl
+                                  <br>Alumni Panel from BRData
+                                  <br>3/4/2020</figcaption>
+                              </figure>  
+                            </div> 
+                            <div class="column">  
+                              <figure>
+                                <img src="images/events/lodrina_cherne_fall2020.png" class = "img-fluid" alt="Lodrina Cherne" width = "250" height="250">
+                                <figcaption>Lodrina Cherne
+                                  <br>Digital Forensic Scientist
+                                  <br>9/16/2020</figcaption>
+                              </figure> 
+                            </div>
+                            <div class="column">
+                              <figure>
+                                <img src="images/events/jess_harrison_fall2020.png" class="img-fluid" alt="Jess Harrison" width="250" height = "250" >
+                                <figcaption>Jess Harrison
+                                  <br>Lead Intelligence Analyst
+                                  <br>10/28/2020</figcaption>
+                              </figure>
+                            </div>
+                          </div>
+                        </div> 
 
-                       <h3> 2020 Guest Speakers </h3>
-                        <hr>
-                        <br>
-                        <h3> Jess Harrison, Lead Intelligence Analyst, 10/28/2020 </h3>
-                        <br>
-                        <img src="images/events/jess_harrison_fall2020.png" class="img-fluid" alt="Jess Harrison" width="400" height = "400" >
-                        <br> <br>
-                        <hr>
-                        <h3> Lodrina Cherne, Digital Forensic Scientist, 9/16/2020</h3>
-                        <br>
-                        <img src="images/events/lodrina_cherne_fall2020.png" class = "img-fluid" alt="Lodrina Cherne" width = "400" height="400">
-                        <br> <br>
-                       <hr>
-
-                        <h3> Alumni Panel from BRData, 3/4/2020</h3>
-
-                         <p> Thanks to Amy Topka, Cheryl St. Pierre, and Anthony Minerva for coming back to Hofstra to give advice on life post-grad!</p>
-                          <br>
-                        <img src = "images/events/brdata.png" class = "img-fluid" alt="BRData Alumni Panel" width = "400" height = "400">
-                           <br> <br> <br>
-                        <hr>
-                        <h3> Dominic Spinosa, Offensive Security Engineer on Facebook's Red Team, 2/19/2020 </h3>
-                        <br>
-                        <img src = "images/events/spinosa.png" class="img-fluid" alt="Dominic Spinosa" width ="400" height="400">
-                          <br> <br> <br>
-
-
-
-
-                      <h3> 2019 Guest Speakers </h3>
-                      <hr>
-                      <br>
-                      <h3> Ray McClure, IT Security Manager, 11/20/2019</h3>
-                      <br>
-                      <img src="images/events/ray_mcclure_fall2019.png" class="img-fluid" alt="Ray McClure" width="400" height="400" >
-
-                    </div>
-
+                        <button class="accordion">2019 Guest Speakers</button>
+                        <div class="panel">
+                          <div class="row">
+                            <div class="column">
+                              <figure>
+                                <img src="images/events/ray_mcclure_fall2019.png" class="img-fluid" alt="Ray McClure" width="250" height="250">
+                                <figcaption>Ray McClure
+                                  <br>IT Security Manager
+                                  <br>11/20/2019</figcaption>
+                              </figure>  
+                            </div>
+                          </div>
+                        </div>
+                        <script>
+                          var acc = document.getElementsByClassName("accordion");
+                          var i;
+                          
+                          for (i = 0; i < acc.length; i++) {
+                            acc[i].addEventListener("click", function() {
+                              this.classList.toggle("active");
+                              var panel = this.nextElementSibling;
+                              if (panel.style.display === "block") {
+                                panel.style.display = "none";
+                              } else {
+                                panel.style.display = "block";
+                              }
+                            });
+                          }
+                          </script>
 
             <br><br>
                       <div class="owl-carousel owl-theme">
