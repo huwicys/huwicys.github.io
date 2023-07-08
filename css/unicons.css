@@ -411,7 +411,7 @@
 .uil-direction:before { content: '\e961'; } /* '' */
 .uil-directions:before { content: '\e962'; } /* '' */
 
-.uil-discord:before { content: '\e084'; } /* '' */
+.uil-discord:before { content: ' \f392'; } /* '' */
 
 .uil-dizzy-meh:before { content: '\e963'; } /* '' */
 .uil-dna:before { content: '\e964'; } /* '' */
